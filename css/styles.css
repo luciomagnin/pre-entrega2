@@ -154,10 +154,10 @@ body {
 h2 {
     text-align: center;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 400;
     font-family: "Encode Sans SC", sans-serif;
     letter-spacing: 2.25px;
-    color: #fff;
+    color: #0C0C0C;
     padding-bottom: 12px;
 }
 
@@ -222,14 +222,14 @@ main {
 footer {
     width: 100%;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.626);
+    background-color: rgba(13, 13, 13, 0.626);
 }
 
 footer p {
-    color: #000000;
+    color: #fff;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     padding-top: 50px;
 }
