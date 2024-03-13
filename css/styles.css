@@ -1,13 +1,9 @@
 /* Código CSS - 4_ ACTUAL */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 * {
@@ -21,9 +17,9 @@ body {
     background-image: url(../img/vineyard.jpg);
     background-size: cover;
     background-position: center;
-    --color1: #ff0000;
-    --color2: #fff2f2;
-    --color3: #000000;
+    --color1: #ae3b69;
+    --color2: #0c0c0c;
+    --color3: #fff;
 }
 
 /* Header */
@@ -37,9 +33,7 @@ body {
     position: relative;
     background-color: var(--color2);
     padding: 12px 20px;
-    font-family: "Italianno", cursive;
-    font-size: 22px;
-    font-weight: 500;
+    font-family: "Poppins", sans-serif;
 }
 
 .logo img {
@@ -80,7 +74,7 @@ body {
 }
 
 .menu li a:hover {
-    color: #ff0000;
+    color: #ae3b69;
     transition: 0.7s;
 }
 
@@ -146,12 +140,12 @@ body {
     font-size: 25px;
     font-weight: 400;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     border-radius: 17px;
 }
 
 /* Termina el carrusel */
-h2 {
+h1 {
     text-align: center;
     font-size: 22px;
     font-weight: 400;
@@ -161,7 +155,7 @@ h2 {
     padding-bottom: 12px;
 }
 
-main h2 {
+main h1 {
     text-decoration: none;
 }
 
@@ -170,7 +164,7 @@ p {
     padding: 10px;
     letter-spacing: 0.9px;
     font-family: "Poppins", sans-serif;
-    color: #ffffff;
+    color: #0C0C0C;
     font-weight: 500;
 }
 
