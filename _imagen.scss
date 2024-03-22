@@ -1,0 +1,109 @@
+
+
+// .about {
+//     margin: 105px auto;
+//     width: 900px;
+//     height: 500px;
+//     display: grid;
+//     grid-template-columns: repeat(6, 1fr);
+//     grid-template-rows: repeat(6, 1fr);
+    
+// }
+
+// .aboutImg {
+//     position: relative;
+//     z-index: 1;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     grid-column: 1/5;
+//     grid-row: 1/5;
+//     border: 1px;
+//     border-radius: 15px;
+// }
+
+// .aboutGradient {
+//     background-image: linear-gradient(20deg, #333131, #0C0C0C 50%);
+//     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+//     border-radius: 10px;
+//     grid-column: 2/6;
+//     grid-row: 2/7;
+// }
+
+// .aboutArticle {
+//     position: relative;
+//     z-index: 2;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     padding: 2em;
+//     box-shadow: 0 0 10px -8px rgba(0, 0, 0, 0.5);
+//     grid-column: 4/9;
+//     grid-row: 3/6;
+//     border-radius: 20px;
+// }
+
+// .aboutTitle {
+//     position: relative; 
+//     z-index: 2;
+//     font-size: 2rem;
+//     margin-bottom: 16px;
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .aboutParagraph {
+//     position: relative; 
+//     z-index: 2;
+//     color: #fff;
+//     font-family: $font-family-1;
+//     font-size: 14.5px;
+//     font-weight: 400;
+// }
+
+// .aboutButton {
+//     display: inline-block;
+//     padding: 10px 20px;
+//     color: $color1;
+//     font-size: 16px;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     overflow: hidden;
+//     transition: .5s;
+//     margin-top: 40px;
+//     letter-spacing: 4px;
+//     border: 2px groove $color1; 
+//     border-radius: 5px; 
+//     margin-bottom: 40px;
+// }
+
+// .aboutButton:hover {
+//     background-color: #ae3b693d; 
+//     color: #fff;
+//     text-decoration: none;
+// }
+
+// @keyframes show{
+//     from{
+//         opacity: 0;
+//         scale: 25%;
+//     }
+
+// to{
+//     opacity: 1;
+//     scale: 100%;
+//     }
+// }
+
+// .aboutImg{
+//     view-timeline-name: --image;
+//     view-timeline-axis: block;
+
+//     animation-timeline: --image;
+//     animation-name: show;
+
+//     animation-range: entry 25% cover 60%;
+//     animation-fill-mode: both;
+// }
+
+// h5{
+//     color: #fff;
+// }
