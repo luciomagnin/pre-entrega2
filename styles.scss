@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: #0C0C0C;
+    background-color: $color4;
     background-size: cover;
     background-position: center;
 }
@@ -34,7 +34,7 @@ h2 {
     font-weight: 400;
     font-family: $font-family-3;
     letter-spacing: 2.25px;
-    color: #fff;
+    color: $color5;
     padding-bottom: 12px;
     margin: 15px 0 20px 0;
 }
@@ -48,14 +48,14 @@ p {
     padding: 10px;
     letter-spacing: 1px;
     font-family: $font-family-2;
-    color: #fff;
+    color: $color5;
     font-weight: 200;
 }
 
 main .parrafo p {
     background-color: rgba(12, 12, 12, 0.17);
     font-weight: 300;
-    color: #fff;
+    color: $color5;
     margin-top: 30px;
     font-size: 14px;
 }
@@ -64,13 +64,13 @@ h3 {
     @include flex-center;
     text-decoration: underline;
     font-family: $font-family-4;
-    color: #D3D3D3;
+    color: $color3;
     font-size: 27px;
     font-weight: 400;
     padding: 7px 14px;
     letter-spacing: 1.35px;
     text-decoration: none;
-    color: #fff;
+    color: $color5;
     border-radius: 17px;
 }
 
@@ -83,12 +83,12 @@ main a {
     @include flex-center;
     font-weight: 400;
     font-size: 24px;
-    color: #fff;
+    color: $color5;
     text-decoration: underline;
 }
 
 main a:hover {
-    color: #ae3b69;
+    color: $color1;
     transition: 0.7s;
 }
 
@@ -105,11 +105,11 @@ main a:hover {
 
 .feature {
     text-align: center; 
-    margin-bottom: 30px; 
+    margin-bottom: 20px; 
     padding: 20px; 
     background-color: $color3;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 251, 251, 0.1); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.89);  
     height: 225px;
     transition: border 0.2s ease;
     transition: background-color 0.3s ease;
@@ -118,100 +118,105 @@ main a:hover {
 .feature i {
     font-size: 3em; 
     margin-bottom: 20px; 
-    color: $color1; 
+    color: $color2; 
 }
 
 .feature h3 {
-    color: $color4; 
+    color: $color1; 
     font-size: 20px; 
     font-family: $font-family-3;
     font-weight: 500;
 }
 
 .feature p {
-    color: $color4; 
+    color: $color1; 
     font-family: $font-family-1;
     font-size: 15px;
     font-weight: 400;
 }
 
 .feature:hover {
-    background-color: $color1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    background-color: $color4;
+    box-shadow: 0 0 10px rgb(255, 255, 255); 
     transform: scale(1.05); 
-    border: 2px solid $color5; 
     transform: rotate(1deg);
     transition: transform 0,3 ease;
 }
 
 .feature:hover i {
-    color: $color4;
+    color: $color1;
 }
 
 .feature:hover p{
-    color: $color3;
+    color: $color5;
 }
 
 .feature:hover h3{
-    color: $color3;
+    color: $color5;
 }
 
 .additional-content {
-    padding: 50px 0; 
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .additional-content .container {
-    max-width: 1200px;
-    margin: 0 auto; 
-    text-align: center; 
-}
-
-.additional-content h2 {
-    font-size: 24px; 
-    margin-bottom: 20px; 
-}
-
-.content-icons {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.content-item {
-    width: calc(33.33% - 20px); 
-    margin: 0 10px 20px; 
-    padding: 20px; 
-    background-color: $color3; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
+.additional-content .content-item {
+    text-align: center;
+    margin: 0 15px 30px;
+    padding: 20px;
+    background-color: $color3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(112, 111, 111);
+    height: 225px;
+    transition: border 0.2s ease;
+    transition: background-color 0.3s ease;
 }
 
-.content-item i {
-    font-size: 48px; 
-    color: $color1; 
-    margin-bottom: 20px; 
-}
-
-.content-item h3 {
-    font-size: 20px; 
-    font-family: $font-family-3;
-    font-weight: 500;
-    margin-bottom: 10px; 
+.additional-content .content-item i {
+    font-size: 3em;
+    margin-bottom: 20px;
     color: $color2;
 }
 
-.content-item p {
-    font-size: 16px; 
-    font-family: $font-family-1;
-    font-weight: 400;
-    color: $color4; 
-    line-height: 1.6; 
+.additional-content .content-item h3 {
+    color: $color1;
+    font-size: 20px;
+    font-family: $font-family-3;
+    font-weight: 500;
 }
 
+.additional-content .content-item p {
+    color: $color1;
+    font-family: $font-family-1;
+    font-size: 15px;
+    font-weight: 600;
+}
 
+.additional-content .content-item:hover {
+    background-color: $color4;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    transform: scale(1.05);
+    transform: rotate(1deg);
+}
 
+.additional-content .content-item:hover p {
+    color: $color5;
+}
 
+.additional-content .content-item:hover h3 {
+    color: $color5;
+}
+
+.additional-content .content-item:hover i {
+    color: $color1;
+}
 
 iframe {
     display: block;
@@ -228,37 +233,69 @@ iframe {
     max-width: 100%;
     height: auto;
     width: 40rem;
-    border: 4px #0C0C0C solid;
+    border: 4px $color4 solid;
     border-radius: 15px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.981);
 }
 
 /* Footer */
 
-footer {
-    position: relative; 
-    margin-top: auto; 
+.page-container {
+    overflow: hidden;
+    position: relative;
+    min-height: 120px;
+    background-color: #000000;
+    background-image: linear-gradient(45deg, $color4 0%, #201c24 74%);
+
+}
+
+    .content-wrap {
+    padding-bottom: 2.5rem;    /* altura de pie de página */
+}
+
+    #footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: auto;
-    background-color: rgba(146, 142, 142, 0.074);
+    height: auto; 
 }
 
-footer p {
-    color: #fff;
+.content-wrap p{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
     font-family: $font-family-2;
-    font-size: 11px;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 50px;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+
 }
 
-div img {
-    width: 27px;
-    margin: 6.5px;
+.icons{
+    display: flex;
 }
 
+.footerParagraph p{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    margin: 0 0 15px 40px;
+}
+
+.icons a{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    margin: 0 0 30px 70px;
+    color: $color5;
+    font-family: $font-family-2;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+}
+
+.icons a:hover{
+    color: $color1;
+}
 /* Vista de Vinos */
-
 .galeria {
     width: 90%;
     height: auto;
@@ -274,14 +311,14 @@ div img {
     justify-content: right;
     align-items: flex-start;
     position: relative;
-    border: 2px solid #0C0C0C;
+    border: 2px solid $color4;
     border-radius: 19.8px;
     box-shadow: 0px 7.2px 14.4px rgba(0, 0, 0, 0.533);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #fff;
-    color: #0C0C0C;
+    background-color: $color5;
+    color: $color4;
     font-size: 13px;
     font-weight: 600;
     font-family: $font-family-3;
@@ -308,7 +345,7 @@ div img {
 }
 
 .descripcion p {
-    color: #0C0C0C;
+    color: $color4;
     font-size: 14px;
     font-weight: 300;
 }
@@ -400,12 +437,5 @@ div img {
     #check:checked ~ .menu {
     right: 0;
     }
-
-}
-
-@media (max-width: 950px){
-.about{
-    margin: 0 auto;
-}
 
 }

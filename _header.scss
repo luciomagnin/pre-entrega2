@@ -17,9 +17,15 @@
     font-weight: 300;
     font-family: $font-family-1;
     margin-top: 5px;
-    color: $color3;
+    color: $color3; /* Color inicial del texto */
     text-decoration: none;
 }
+
+.logo a:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
 
 .menu {
     display: flex;
@@ -37,6 +43,7 @@
     transition: 0.15s ease-in-out;
     position: relative;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .menu li a::after {
