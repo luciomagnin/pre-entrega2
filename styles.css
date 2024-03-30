@@ -22,10 +22,10 @@
   font-weight: 300;
   font-family: "Red Hat Display", sans-serif;
   margin-top: 5px;
-  color: #bbb1b1; /* Color inicial del texto */
+  color: #b3a9a9;
+  /* Color inicial del texto */
   text-decoration: none;
 }
-
 .logo a:hover {
   opacity: 0.5;
   transition: 0.4s;
@@ -34,22 +34,20 @@
 .menu {
   display: flex;
 }
-
 .menu li {
   padding-left: 45px;
 }
-
 .menu li a {
   display: inline-block;
   text-decoration: none;
-  color: #bbb1b1;
+  color: #b3a9a9;
   text-align: center;
   transition: 0.15s ease-in-out;
   position: relative;
   text-transform: uppercase;
   letter-spacing: 2px;
+  cursor: pointer;
 }
-
 .menu li a::after {
   content: "";
   position: absolute;
@@ -60,20 +58,18 @@
   background-color: #ae3b69;
   transition: 0.15s ease-in-out;
 }
-
-.menu li a:hover:after {
-  width: 100%;
-}
-
 .menu li a:hover {
   color: #ae3b69;
   transition: 0.7s;
+}
+.menu li a:hover:after {
+  width: 100%;
 }
 
 .open-menu,
 .close-menu {
   position: absolute;
-  color: #bbb1b1;
+  color: #b3a9a9;
   cursor: pointer;
   font-size: 1.5rem;
   display: none;
@@ -88,6 +84,7 @@
 .close-menu {
   top: 20px;
   right: 20px;
+  transform: translateY(50%);
 }
 
 #check {
@@ -95,7 +92,7 @@
 }
 
 .sec {
-  width: 50%;
+  width: 70%;
   height: auto;
   margin: 0 auto;
   border: double 3px #bbb1b1;
@@ -108,7 +105,7 @@
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  max-height: 390px;
+  max-height: 450px;
   width: auto;
   height: auto;
   margin: auto;
@@ -138,48 +135,37 @@
   border-radius: 17px;
 }
 
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .login-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
+  width: 550px;
+  height: 420px;
+  margin-left: 50%;
+  margin-top: 20%;
   padding: 40px;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.856);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-
 .login-box h2 {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
   text-align: center;
 }
-
 .login-box .user-box {
   position: relative;
 }
-
 .login-box .user-box input {
   width: 100%;
   padding: 10px 0;
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #fff;
   outline: none;
   background: transparent;
 }
-
 .login-box .user-box label {
   position: absolute;
   top: 0;
@@ -190,15 +176,12 @@
   pointer-events: none;
   transition: 0.5s;
 }
-
-.login-box .user-box input:focus + label,
-.login-box .user-box input:valid + label {
+.login-box .user-box input:focus + label, .login-box .user-box input:valid + label {
   top: -20px;
   left: 0;
   color: #ae3b69;
   font-size: 12px;
 }
-
 .login-box form a {
   position: relative;
   display: inline-block;
@@ -212,18 +195,15 @@
   margin-top: 40px;
   letter-spacing: 6px;
 }
-
 .login-box a:hover {
   background: rgba(13, 13, 13, 0.7843137255);
   color: #ae3b69;
   border-radius: 5px;
 }
-
 .login-box a span {
   position: absolute;
   display: block;
 }
-
 .login-box a span:nth-child(1) {
   top: 0;
   left: -100%;
@@ -231,15 +211,6 @@
   width: 100%;
   background: linear-gradient(90deg, transparent, #ae3b69);
   animation: btn-anim1 1s linear infinite;
-}
-
-@keyframes btn-anim1 {
-  0% {
-    left: -100%;
-  }
-  50%, 100% {
-    left: 100%;
-  }
 }
 .login-box a span:nth-child(2) {
   top: -100%;
@@ -250,15 +221,6 @@
   animation: btn-anim2 1s linear infinite;
   animation-delay: 0.25s;
 }
-
-@keyframes btn-anim2 {
-  0% {
-    top: -100%;
-  }
-  50%, 100% {
-    top: 100%;
-  }
-}
 .login-box a span:nth-child(3) {
   bottom: 0;
   right: -100%;
@@ -267,15 +229,6 @@
   background: linear-gradient(270deg, transparent, #ae3b69);
   animation: btn-anim3 1s linear infinite;
   animation-delay: 0.5s;
-}
-
-@keyframes btn-anim3 {
-  0% {
-    right: -100%;
-  }
-  50%, 100% {
-    right: 100%;
-  }
 }
 .login-box a span:nth-child(4) {
   bottom: -100%;
@@ -287,6 +240,30 @@
   animation-delay: 0.75s;
 }
 
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
 @keyframes btn-anim4 {
   0% {
     bottom: -100%;
@@ -347,271 +324,26 @@
   font-weight: 400;
 }
 
-.aboutButton {
+.aboutContainer {
   display: inline-block;
-  padding: 10px 20px;
-  color: #ae3b69;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: 0.5s;
-  margin-top: 40px;
-  letter-spacing: 4px;
-  border: 2px groove #ae3b69;
-  border-radius: 5px;
   margin-bottom: 40px;
-}
-
-/* Estilo del botón al pasar el cursor sobre él */
-.aboutButton:hover {
-  background-color: rgba(174, 59, 105, 0.2392156863); /* Cambiar el color de fondo al pasar el cursor */
-  color: #fff;
-  text-decoration: none;
+  margin-bottom: 50px;
 }
 
 h5 {
   color: #fff;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #0C0C0C;
-  background-size: cover;
-  background-position: center;
-}
-
-h2 {
-  text-align: center;
-  font-size: 25px;
-  font-weight: 400;
-  font-family: "Cinzel", serif;
-  letter-spacing: 2.25px;
-  color: #fff;
-  padding-bottom: 12px;
-  margin: 15px 0 20px 0;
-}
-
-main h1 {
-  text-decoration: none;
-}
-
-p {
-  font-size: 13.5px;
-  padding: 10px;
-  letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-  font-weight: 200;
-}
-
-main .parrafo p {
-  background-color: rgba(12, 12, 12, 0.17);
-  font-weight: 300;
-  color: #fff;
-  margin-top: 30px;
-  font-size: 14px;
-}
-
-h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: underline;
-  font-family: "Ubuntu", sans-serif;
-  color: #bbb1b1;
-  font-size: 27px;
-  font-weight: 400;
-  padding: 7px 14px;
-  letter-spacing: 1.35px;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 17px;
-}
-
-main {
-  padding: 13px;
-  margin: 13px;
-}
-
-main a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 400;
-  font-size: 24px;
-  color: #fff;
-  text-decoration: underline;
-}
-
-main a:hover {
-  color: #ae3b69;
-  transition: 0.7s;
-}
-
-/* Estilos para la sección de características de los vinos */
-.wine-features {
-  padding: 50px 0;
-}
-
-.containerSection {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.feature {
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #bbb1b1;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.89);
-  height: 225px;
-  transition: border 0.2s ease;
-  transition: background-color 0.3s ease;
-}
-
-.feature i {
-  font-size: 3em;
-  margin-bottom: 20px;
-  color: #201d1a;
-}
-
-.feature h3 {
-  color: #ae3b69;
-  font-size: 20px;
-  font-family: "Cinzel", serif;
-  font-weight: 500;
-}
-
-.feature p {
-  color: #ae3b69;
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.feature:hover {
-  background-color: #0C0C0C;
-  box-shadow: 0 0 10px rgb(255, 255, 255);
-  transform: scale(1.05);
-  transform: rotate(1deg);
-  transition: transform 0, 3 ease;
-}
-
-.feature:hover i {
-  color: #ae3b69;
-}
-
-.feature:hover p {
-  color: #fff;
-}
-
-.feature:hover h3 {
-  color: #fff;
-}
-
-.additional-content {
-  padding: 50px 0;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.additional-content .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.additional-content .content-item {
-  text-align: center;
-  margin: 0 15px 30px;
-  padding: 20px;
-  background-color: #bbb1b1;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgb(112, 111, 111);
-  height: 225px;
-  transition: border 0.2s ease;
-  transition: background-color 0.3s ease;
-}
-
-.additional-content .content-item i {
-  font-size: 3em;
-  margin-bottom: 20px;
-  color: #201d1a;
-}
-
-.additional-content .content-item h3 {
-  color: #ae3b69;
-  font-size: 20px;
-  font-family: "Cinzel", serif;
-  font-weight: 500;
-}
-
-.additional-content .content-item p {
-  color: #ae3b69;
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.additional-content .content-item:hover {
-  background-color: #0C0C0C;
-  box-shadow: 0 0 10px rgb(255, 255, 255);
-  transform: scale(1.05);
-  transform: rotate(1deg);
-}
-
-.additional-content .content-item:hover p {
-  color: #fff;
-}
-
-.additional-content .content-item:hover h3 {
-  color: #fff;
-}
-
-.additional-content .content-item:hover i {
-  color: #ae3b69;
-}
-
-iframe {
-  display: block;
-  margin: auto;
-  padding: 10px;
-}
-
-.reservarImagen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 32px;
-}
-
-.reservarImagen img {
-  max-width: 100%;
-  height: auto;
-  width: 40rem;
-  border: 4px #0C0C0C solid;
-  border-radius: 15px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.981);
-}
-
 /* Footer */
 .page-container {
   overflow: hidden;
   position: relative;
-  min-height: 120px;
+  height: 300px;
   background-color: #000000;
-  background-image: linear-gradient(45deg, #0C0C0C 0%, #201c24 74%);
 }
 
 .content-wrap {
-  padding-bottom: 2.5rem; /* altura de pie de página */
+  padding-bottom: 2.5rem;
 }
 
 #footer {
@@ -651,12 +383,58 @@ iframe {
   letter-spacing: 1.5px;
   text-decoration: none;
 }
-
 .icons a:hover {
   color: #ae3b69;
 }
 
-/* Vista de Vinos */
+.up {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  color: black;
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 #fff;
+  transition: 1s;
+}
+
+.aboutButton {
+  padding: 7px 10px 7px 10px;
+  color: #ae3b69;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+  transition: 0.5s;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: 2px solid #201d1a;
+  border-radius: 5px;
+}
+.aboutButton:hover {
+  opacity: 0.5;
+  color: #fff !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0C0C0C;
+  background-size: cover;
+  background-position: center;
+}
+
 .galeria {
   width: 90%;
   height: auto;
@@ -686,7 +464,6 @@ iframe {
   padding: 7px;
   transition: all 0.9s;
 }
-
 .item:hover {
   transform: scale(0.95);
 }
@@ -704,7 +481,6 @@ iframe {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-
 .descripcion p {
   color: #0C0C0C;
   font-size: 14px;
@@ -747,7 +523,198 @@ iframe {
   background-image: url(../img/puna2600rose.jpg);
 }
 
-/* Termina vista de vinos */
+/* Estilos para la las cards */
+.wine-features {
+  padding: 50px 0;
+}
+
+.containerSection {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #E9F2D7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(112, 111, 111, 0.558);
+  height: 225px;
+  transition: border 0.2s ease;
+  transition: background-color 0.3s ease;
+}
+.feature i {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #0C0C0C;
+}
+.feature h3 {
+  color: #ae3b69;
+  font-size: 20px;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+}
+.feature p {
+  color: #ae3b69;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.feature:hover {
+  background-color: #0C0C0C;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  transform: scale(1.05);
+  transform: rotate(1deg);
+  transition: transform 0, 3 ease;
+}
+.feature:hover i {
+  color: #ae3b69;
+}
+.feature:hover p,
+.feature:hover h3 {
+  color: #fff;
+}
+
+.additional-content {
+  padding: 50px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.additional-content .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.additional-content .content-item {
+  text-align: center;
+  margin: 0 15px 30px;
+  padding: 20px;
+  background-color: #E9F2D7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(112, 111, 111, 0.558);
+  height: 225px;
+  transition: border 0.2s ease;
+  transition: background-color 0.3s ease;
+}
+.additional-content .content-item i {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #0C0C0C;
+}
+.additional-content .content-item h3 {
+  color: #ae3b69;
+  font-size: 20px;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+}
+.additional-content .content-item p {
+  color: #ae3b69;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.additional-content .content-item:hover {
+  background-color: #0C0C0C;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  transform: scale(1.05);
+  transform: rotate(1deg);
+}
+.additional-content .content-item:hover p,
+.additional-content .content-item:hover h3 {
+  color: #fff;
+}
+.additional-content .content-item:hover i {
+  color: #ae3b69;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Cinzel", serif;
+  letter-spacing: 2.25px;
+  color: #fff;
+  padding-bottom: 12px;
+  margin: 15px 0 20px 0;
+}
+
+main h1 {
+  text-decoration: none;
+}
+
+p {
+  font-size: 13.5px;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 200;
+}
+
+main .parrafo p {
+  background-color: rgba(12, 12, 12, 0.17);
+  font-weight: 300;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  font-family: "Ubuntu", sans-serif;
+  color: #b3a9a9;
+  font-size: 27px;
+  font-weight: 400;
+  padding: 7px 14px;
+  letter-spacing: 1.35px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 17px;
+}
+
+main {
+  padding: 13px;
+  margin: 13px;
+}
+main a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: underline;
+}
+main a:hover {
+  color: #ae3b69;
+  transition: 0.7s;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+.reservarImagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+.reservarImagen img {
+  max-width: 100%;
+  height: auto;
+  width: 40rem;
+  border: 4px #0C0C0C solid;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.981);
+}
+
 /* Media Queries */
 @media (max-width: 900px) {
   .galeria {

@@ -1,0 +1,87 @@
+// main
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: $font-family-3;
+    letter-spacing: 2.25px;
+    color: $color5;
+    padding-bottom: 12px;
+    margin: 15px 0 20px 0;
+}
+
+main h1 {
+    text-decoration: none;
+}
+
+p {
+    font-size: 13.5px;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-family: $font-family-2;
+    color: $color5;
+    font-weight: 200;
+}
+
+main .parrafo p {
+    background-color: rgba(12, 12, 12, 0.17);
+    font-weight: 300;
+    color: $color5;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-family: $font-family-4;
+    color: $color3;
+    font-size: 27px;
+    font-weight: 400;
+    padding: 7px 14px;
+    letter-spacing: 1.35px;
+    text-decoration: none;
+    color: $color5;
+    border-radius: 17px;
+}
+
+main {
+    padding: 13px;
+    margin: 13px;
+
+    a {
+        @include flex-center;
+        font-weight: 400;
+        font-size: 24px;
+        color: $color5;
+        text-decoration: underline;
+
+        &:hover {
+            color: $color1;
+            transition: 0.7s;
+        }
+    }
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.reservarImagen {
+    @include flex-center;
+    margin-top: 32px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        width: 40rem;
+        border: 4px $color4 solid;
+        border-radius: 15px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.981);
+    }
+}

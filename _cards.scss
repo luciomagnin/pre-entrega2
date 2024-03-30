@@ -1,0 +1,119 @@
+/* Estilos para la las cards */
+
+.wine-features {
+    padding: 50px 0;
+}
+
+.containerSection {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #E9F2D7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(112, 111, 111, 0.558);
+    height: 225px;
+    transition: border 0.2s ease;
+    transition: background-color 0.3s ease;
+
+    i {
+        font-size: 3em;
+        margin-bottom: 20px;
+        color: $color4;
+    }
+
+    h3 {
+        color: $color1;
+        font-size: 20px;
+        font-family: $font-family-3;
+        font-weight: 500;
+    }
+
+    p {
+        color: $color1;
+        font-family: $font-family-1;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    &:hover {
+        background-color: $color4;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+        transform: scale(1.05);
+        transform: rotate(1deg);
+        transition: transform 0, 3 ease;
+
+        i {
+            color: $color1;
+        }
+
+        p,
+        h3 {
+            color: $color5;
+        }
+    }
+}
+
+.additional-content {
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content-item {
+        text-align: center;
+        margin: 0 15px 30px;
+        padding: 20px;
+        background-color: #E9F2D7;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(112, 111, 111, 0.558);
+        height: 225px;
+        transition: border 0.2s ease;
+        transition: background-color 0.3s ease;
+
+        i {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: $color4;
+        }
+
+        h3 {
+            color: $color1;
+            font-size: 20px;
+            font-family: $font-family-3;
+            font-weight: 500;
+        }
+
+        p {
+            color: $color1;
+            font-family: $font-family-1;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        &:hover {
+            background-color: $color4;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            transform: scale(1.05);
+            transform: rotate(1deg);
+
+            p,
+            h3 {
+                color: $color5;
+            }
+
+            i {
+                color: $color1;
+            }
+        }
+    }
+}
