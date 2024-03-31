@@ -17,12 +17,10 @@
     font-family: "Red Hat Display", sans-serif;
     margin-top: 5px;
     color: $color3;
-
-    /* Color inicial del texto */
     text-decoration: none;
 
     &:hover {
-        opacity: 0.5;
+        opacity: 0.3;
         transition: 0.4s;
     }
 }
@@ -38,7 +36,7 @@
             text-decoration: none;
             color: $color3;
             text-align: center;
-            transition: 0.15s ease-in-out;
+            transition: 0.20s ease-in-out;
             position: relative;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -51,8 +49,8 @@
                 left: 0;
                 width: 0;
                 height: 1px;
-                background-color: $color1;
-                transition: 0.15s ease-in-out;
+                background-color: $color4;
+                transition: 0.20s ease-in-out;
             }
 
             &:hover {
@@ -60,8 +58,8 @@
                     width: 100%;
                 }
 
-                color: $color1;
-                transition: 0.7s;
+                color: $color4;
+                transition: 0.3s;
             }
         }
     }

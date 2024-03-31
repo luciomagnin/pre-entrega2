@@ -1,7 +1,7 @@
 // main
 
 h2 {
-    text-align: center;
+    text-align: center; 
     font-size: 25px;
     font-weight: 400;
     font-family: $font-family-3;
@@ -49,8 +49,7 @@ h3 {
 }
 
 main {
-    padding: 13px;
-    margin: 13px;
+
 
     a {
         @include flex-center;

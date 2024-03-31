@@ -1,0 +1,61 @@
+
+main #redWine{
+    width: 100%;
+    opacity: 0.4;
+}
+
+.principal-image {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em; 
+    color: $color3; 
+    font-family: $font-family-3;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    position: absolute;
+    top: 43%;
+    left: 51%;
+    z-index: 1;
+    transform: translateX(-50%);
+    font-family: $font-family-2;
+    font-size: 1.3em;
+    font-weight: 100;
+    color: $color5;
+    letter-spacing: 3px;
+}
+
+
+.sub-subtitle {
+    position: absolute;
+    top: 47%;
+    left: 51%;
+    z-index: 1;
+    transform: translateX(-50%);
+    font-family: $font-family-2;
+    font-size: 1em;
+    font-weight: 100;
+    color: #d0cbc6;
+    letter-spacing: 1px;
+
+}
+
+.overlay-text-2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em; 
+    color: $color3; 
+    font-family: $font-family-5;
+    font-weight: 300;
+    letter-spacing: 1px;
+}

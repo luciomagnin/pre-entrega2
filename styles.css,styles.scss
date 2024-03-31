@@ -1,0 +1,89 @@
+.galeria {
+  width: 95.5%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 270px);
+  grid-gap: 20px;
+  margin: 30px;
+}
+
+.item {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  position: relative;
+  border: 2px solid #0C0C0C;
+  border-radius: 20px;
+  box-shadow: 0px 7px 14px rgba(255, 255, 255, 0.075);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  color: #0C0C0C;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Cinzel", serif;
+  padding: 7px;
+  transition: all 0.3s;
+}
+.item:hover {
+  transform: scale(1.05);
+}
+
+.descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 78px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.descripcion p {
+  color: #0C0C0C;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.item:hover .descripcion {
+  opacity: 1;
+}
+
+.item1 {
+  background-image: url(../img/coquena.jpg);
+}
+
+.item2 {
+  background-image: url(../img/coquena_rose.jpeg);
+}
+
+.item3 {
+  background-image: url(../img/gataflora-pink.jpg);
+}
+
+.item4 {
+  background-image: url(../img/gataflora.jpeg);
+}
+
+.item5 {
+  background-image: url(../img/helios-tannat.png);
+}
+
+.item6 {
+  background-image: url(../img/heliosmalbec.jpg);
+}
+
+.item7 {
+  background-image: url(../img/puna2600.jfif);
+}
+
+.item8 {
+  background-image: url(../img/puna2600rose.jpg);
+}
+
+/*# sourceMappingURL=styles.css,styles.scss.map */

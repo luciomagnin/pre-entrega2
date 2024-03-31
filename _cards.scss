@@ -41,7 +41,7 @@
     }
 
     &:hover {
-        background-color: $color4;
+        background-color: #000;
         box-shadow: 0 0 10px rgb(255, 255, 255);
         transform: scale(1.05);
         transform: rotate(1deg);
@@ -101,7 +101,7 @@
         }
 
         &:hover {
-            background-color: $color4;
+            background-color: #000;
             box-shadow: 0 0 10px rgb(255, 255, 255);
             transform: scale(1.05);
             transform: rotate(1deg);
