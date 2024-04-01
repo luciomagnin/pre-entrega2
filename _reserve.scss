@@ -1,6 +1,21 @@
 .principal-image {
     position: relative;
     text-align: center;
+    animation: appear 0.5s ease forwards;
+
+}
+
+@keyframes appear {
+from {
+    scale: 10%; 
+    opacity: 0; 
+}
+
+to {
+    scale: 100%;
+    opacity: 1;
+}
+
 }
 
 .overlay-text {
@@ -62,17 +77,52 @@
     color: $color5;
 }
 
-/* Estilos para la sección "Sobre Nosotros" */
+// Estilos para la sección Nosotros 
 #about {
     background-color: $color4;
+    overflow: hidden;
 }
 
 #about img {
     max-width: 100%;
     border-radius: 10px;
+    opacity: 0; 
+    transform: translateX(-100%);
+    animation: slideInRight 1s forwards ease-in; 
 }
 
-/* Estilos para la sección "Nuestro Equipo" */
+#about .section-content{
+    opacity: 0; 
+    transform: translateX(-100%);
+    animation: slideInLeft 1s forwards ease-in;
+}
+
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+//  Estilos para la sección Nuestro Equipo
 #our-team {
     background-color: $color4;
 }
@@ -81,13 +131,52 @@
     margin-bottom: 30px;
 }
 
+
+
+.team-member h3{
+    color: black;
+    font-family: $font-family-1;
+}
+
+
 .team-member img {
     width: 250px;
+
     height: 250px;
     object-fit: cover;
-    border: 5px solid $color4;
+    border: 3px solid $color4;
     border-radius: 50%;
+    transition: transform 0.9s, box-shadow 0.9s;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
+}
+
+@keyframes show{
+        from{
+            opacity: 0;
+            scale: 60%;
+        }
+    
+    to{
+        opacity: 1;
+        scale: 100%;
+        }
+    }
+    
+    .team-member img{
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+    
+        animation-timeline: --image;
+        animation-name: show;
+    
+        animation-range: entry 25% cover 60%;
+        animation-fill-mode: both;
+    }
+
 
 .text-muted{
     font-size: 20px;

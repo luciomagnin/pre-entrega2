@@ -229,7 +229,7 @@
 /* Fin de vista de Contacto */
 @media screen and (max-width: 769px) {
   .login-box {
-    width: 80%; /* Ajustar el ancho para tamaños de pantalla más pequeños */
+    width: 80%;
   }
 }
 /* Estilos base */
@@ -467,11 +467,12 @@ body {
   font-family: "Cinzel", serif;
   padding: 7px;
   transition: all 0.3s;
-  animation: appear 0.7s ease forwards;
+  animation: appear 0.5s ease-out forwards;
 }
 .item:hover {
   transform: scale(1.05);
 }
+
 @keyframes appear {
   from {
     transform: scale(0.2);
@@ -482,7 +483,6 @@ body {
     opacity: 1;
   }
 }
-
 .descripcion {
   position: absolute;
   bottom: 0;
@@ -810,8 +810,19 @@ iframe {
 .principal-image {
   position: relative;
   text-align: center;
+  animation: appear 0.5s ease forwards;
 }
 
+@keyframes appear {
+  from {
+    scale: 10%;
+    opacity: 0;
+  }
+  to {
+    scale: 100%;
+    opacity: 1;
+  }
+}
 .overlay-text {
   position: absolute;
   top: 50%;
@@ -867,17 +878,45 @@ iframe {
   color: #fff;
 }
 
-/* Estilos para la sección "Sobre Nosotros" */
 #about {
   background-color: #0C0C0C;
+  overflow: hidden;
 }
 
 #about img {
   max-width: 100%;
   border-radius: 10px;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInRight 1s forwards ease-in;
 }
 
-/* Estilos para la sección "Nuestro Equipo" */
+#about .section-content {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft 1s forwards ease-in;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 #our-team {
   background-color: #0C0C0C;
 }
@@ -886,12 +925,41 @@ iframe {
   margin-bottom: 30px;
 }
 
+.team-member h3 {
+  color: black;
+  font-family: "Red Hat Display", sans-serif;
+}
+
 .team-member img {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border: 5px solid #0C0C0C;
+  border: 3px solid #0C0C0C;
   border-radius: 50%;
+  transition: transform 0.9s, box-shadow 0.9s;
+}
+.team-member img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 60%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+.team-member img {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 60%;
+  animation-fill-mode: both;
 }
 
 .text-muted {
