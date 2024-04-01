@@ -26,10 +26,23 @@
     font-family: "Cinzel", serif;
     padding: 7px;
     transition: all 0.3s;
+    animation: appear 0.7s ease forwards;
 
     &:hover {
         transform: scale(1.05);
     }
+    
+    @keyframes appear {
+    from {
+        transform: scale(0.2); 
+        opacity: 0; 
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 }
 
 .descripcion {

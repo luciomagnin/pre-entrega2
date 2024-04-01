@@ -4,6 +4,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(9, 100px);
         grid-gap: 20px;
+        margin: auto;
     }
 }
 
@@ -15,7 +16,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
     .menu {
         flex-direction: column;
         align-items: center;
@@ -47,3 +48,124 @@
         right: 0;
     }
 }
+
+@media (max-width: 1100px) {
+    .image-text,
+    .second-image-text {
+        margin: 0 15px 30px; /* Reducir margen inferior */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-text img,
+    .second-image-text img {
+        width: 100%;
+        max-width: 100%;
+        height: auto; 
+        object-fit: contain; 
+    }
+
+    .image-text .text-content,
+    .second-image-text .text-content {
+        margin: 15px; 
+        text-align: center;
+    }
+
+    .image-text h2,
+    .second-image-text h2 {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .image-text p,
+    .second-image-text p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-text,
+    .second-image-text {
+        margin: 0 15px 20px;
+    }
+}
+
+/* Layout */
+@media (max-width: 1200px) {
+    .about {
+        width: 85%;
+        margin: 70px auto; 
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+        grid-gap: 20px;
+    }
+
+    .aboutImg {
+        grid-column: 1/10;
+        grid-row: 1/7;
+    }
+
+    .aboutGradient {
+        grid-column: 1/13;
+        grid-row: 3/10;
+    }
+
+    .aboutArticle {
+        grid-column: 6/13;
+        grid-row: 6/10;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin: 40px auto; 
+    }
+
+    .aboutImg {
+        grid-column: 3/13;
+        grid-row: 1/5;
+    }
+
+    .aboutGradient {
+        grid-column: 3/13;
+        grid-row: 4/13;
+    }
+
+    .aboutArticle {
+        grid-column: 3/13;
+        grid-row: 4/13;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutImg {
+        animation-name: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .image-text {
+        animation-name: none;
+    }
+}
+
+// imagen de index
+
+@media screen and (max-width: 768px) {
+    .overlay-text {
+        font-size: 2rem;
+    }
+
+    .sub {
+        font-size: 1rem;
+    }
+
+    .sub-subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+// contacto

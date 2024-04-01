@@ -1,0 +1,96 @@
+.image-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.image-text img{
+    width: 45rem;
+    height: auto;
+    margin-left: 15px;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+
+image-text .text-content {
+    margin-left: 40px; 
+}
+
+.image-text h2 {
+    margin: 0; 
+    font-size: 30px;
+    color: $color5;
+    font-weight: 400;
+}
+
+.image-text p{
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: $font-family-5;
+    font-weight: 500;
+    align-content: baseline;
+    letter-spacing: 2px;
+}
+
+// segunda sección
+
+.second-image-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.second-image-text img {
+    width: 45rem;
+    height: auto;
+    margin-right: 15px; 
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.second-image-text .text-content{
+    margin-right: 40px; 
+}
+
+.second-image-text h2 {
+    margin: 0; 
+    font-size: 30px;
+    color: #866243;
+    font-weight: 400;
+}
+
+.second-image-text p {
+    margin-right: 40px; 
+    font-size: 20px;
+    font-family: $font-family-5;
+    font-weight: 500;
+    align-content: baseline;
+    letter-spacing: 2px;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 10%;
+    }
+
+to{
+    opacity: 1;
+    scale: 100%;
+    }
+}
+
+.image-text{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 60%;
+    animation-fill-mode: both;
+}
+

@@ -1,61 +1,130 @@
-
-main #redWine{
-    width: 100%;
-    opacity: 0.4;
-}
-
 .principal-image {
     position: relative;
+    text-align: center;
 }
 
 .overlay-text {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3.5em; 
-    color: $color3; 
-    font-family: $font-family-3;
-    font-weight: 100;
-    letter-spacing: 2px;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
-.subtitle {
+.sub {
     position: absolute;
-    top: 43%;
+    top: 59%;
     left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: white;
     z-index: 1;
-    transform: translateX(-50%);
-    font-family: $font-family-2;
-    font-size: 1.3em;
-    font-weight: 100;
-    color: $color5;
-    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
-
 
 .sub-subtitle {
     position: absolute;
-    top: 47%;
+    top: 65%;
     left: 51%;
-    z-index: 1;
-    transform: translateX(-50%);
-    font-family: $font-family-2;
-    font-size: 1em;
-    font-weight: 100;
-    color: #d0cbc6;
-    letter-spacing: 1px;
-
-}
-
-.overlay-text-2{
-    position: absolute;
-    top: 40%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3.5em; 
-    color: $color3; 
-    font-family: $font-family-5;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-size: 1rem;
+    color: white;
+    z-index: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
+#redWine {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+
+// nuestro equipo
+
+.section-title {
+    color: $color5;
+    font-family: $font-family-3;
+    font-size: 30px;
+}
+
+.section-title2{
+    color: $color4;
+    font-family: $font-family-5;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.section-description {
+    color: $color5;
+}
+
+/* Estilos para la sección "Sobre Nosotros" */
+#about {
+    background-color: $color4;
+}
+
+#about img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para la sección "Nuestro Equipo" */
+#our-team {
+    background-color: $color4;
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid $color4;
+    border-radius: 50%;
+}
+
+.text-muted{
+    font-size: 20px;
+    font-family: $font-family-1;
+    font-weight: 400;
+    color: black;
+}
+
+/* Estilos para la sección "Nuestra Misión" */
+#our-mission {
+    background-color: $color4;
+}
+
+/* Estilos para títulos y enlaces */
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-description {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
